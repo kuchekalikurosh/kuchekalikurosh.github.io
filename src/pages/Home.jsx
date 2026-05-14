@@ -3,12 +3,10 @@ import profilePic from '../assets/profile.JPG'
 function Home() {
   return (
     <main>
-        <section className="container page-section text-center">
+        <section className="hero-section container text-center">
             <h1 className="display-1 fw-bold">Kurosh Kuchekali</h1>
             <p className="text-accent fs-5">Building software and interactive experiences</p>
-        </section>
 
-        <section className="image-section text-center">
             <img 
                 src={profilePic}
                 alt="Kurosh"

@@ -4,18 +4,15 @@ import "./navbar.css"
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg custom-navbar shadow-sm">
-
-            <div className="container d-flex align-items-center gap-4">
+        <nav className="custom-navbar">
+            <div className="container navbar-content px-4">
                 {/* Brand */}
                 <Link className="navbar-brand custom-brand fw-bold" to="/">Kurops</Link>
 
-                <ul className="navbar-nav d-flex flex-row gap-3 mb-0">
-                    <li className="nav-item">
-                        <NavLink className={({ isActive }) => isActive ? "nav-link custom-link active-link" : "nav-link custom-link"} to="/" end>Home</NavLink>
-                        <NavLink className={({ isActive }) => isActive ? "nav-link custom-link active-link" : "nav-link custom-link"} to="/projects" end>Projects</NavLink>
-                    </li>
-                </ul>
+                <div className="navbar-links">
+                    <NavLink to="/" end className={({ isActive }) => isActive ? "navbar-link active-link" : "navbar-link"}>Home</NavLink>
+                    <NavLink to="projects" end className={({ isActive }) => isActive ? "navbar-link active-link" : "navbar-link"}>Projects</NavLink>
+                </div>
             </div>
         </nav>
     )

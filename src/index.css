@@ -24,7 +24,7 @@ body,
     radial-gradient(
       circle at top,
       rgba(201, 160, 220, 0.15),
-      transparent 70%
+      transparent 30%
     ),
     var(--bg);
 }
@@ -39,11 +39,12 @@ a {
 }
 
 .about-section {
-  padding: 5rem 0;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 
 .quote-section {
-  padding: 7rem 0;
+  padding: 6rem 0;
 }
 
 .content-narrow {
@@ -63,17 +64,26 @@ a {
   text-align: start;
 }
 
+.hero-section {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
 .image-section {
   padding: 4rem 0;
 }
 
 .profile-image {
-  width: 700px;
-  border-radius: 20px;
+  width: 600px;
+  border-radius: 15px;
   object-fit: cover;
   border: 1px solid var(--border);
 }
 
 .text-accent {
   color: var(--accent);
+}
+
+html {
+  scrollbar-gutter: stable;
 }
