@@ -13,6 +13,7 @@ function Navbar() {
                 <ul className="navbar-nav d-flex flex-row gap-3 mb-0">
                     <li className="nav-item">
                         <NavLink className={({ isActive }) => isActive ? "nav-link custom-link active-link" : "nav-link custom-link"} to="/" end>Home</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "nav-link custom-link active-link" : "nav-link custom-link"} to="/projects" end>Projects</NavLink>
                     </li>
                 </ul>
             </div>
