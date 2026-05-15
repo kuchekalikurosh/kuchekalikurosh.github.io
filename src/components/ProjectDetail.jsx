@@ -16,7 +16,7 @@ function ProjectDetail({ project }) {
                     ))}
                 </div>
 
-                {project.blocks.map((blocl, indes) => {
+                {project.blocks.map((block, index) => {
 
                     if (block.type === "text") {
                         return (
