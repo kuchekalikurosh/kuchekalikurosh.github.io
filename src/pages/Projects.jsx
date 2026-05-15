@@ -7,19 +7,28 @@ function Projects() {
             <p className="mb-5 text-secondary">Collection of projects I've built, experimented with, or contributed to</p>
 
             <div className="row g-4">
-                <div className="col md-6">
+                <div className="col-12 col-md-6 col-lg-4">
                     <ProjectCard
                         title="Portfolio Website"
 
-                        description={`A personal portfolio website built with React, Vite, Bootstrap, and GitHub pages.
-                        Originally created as an opportunity to learn React and modern frontend workflows,
-                        this site gradually evolved into a personal space for showcasing projects,
-                        ideas, and technical growth. This site is an ongoing project that I plan to continue refining as I grow
-                        as a developer and learn new technologies.`}
+                        description={`A personal portfolio built to learn React, document my work, 
+                            and create a home for future projects. (You're on it right now!)`}
 
                         tech={["React", "Vite", "Bootstrap"]}
 
                         link="/projects/portfolio"
+                    />
+                </div>
+
+                <div className="col-12 col-md-6 col-lg-4">
+                    <ProjectCard
+                        title="Geometry Wars"
+
+                        description={'A small browser-based arcade game, my first step in game development'}
+
+                        tech={["Javascript", "HTML", "CSS"]}
+                        
+                        link="/projects/geowar"
                     />
                 </div>
             </div>
