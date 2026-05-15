@@ -1,14 +1,21 @@
+import { Link } from 'react-router-dom'
+import "./ProjectDetail.css"
+
 function ProjectDetail({ project }) {
     return (
-        <main className="container page-section">
+        <main className="container page-section project-detail">
+
+            <Link to="/projects" className="back-link">
+                Back to Projects
+            </Link>
 
             <div className="content-narrow">
 
-                <h1 className="mb-3"> {project.title}</h1>
+                <h1> {project.title}</h1>
 
-                <p className="text-secondary mb-5"> {project.summary}</p>
+                <p className="project-summary text-secondary fw-bold"> {project.summary}</p>
 
-                <div className="tech-list mb-5">
+                <div className="tech-list">
                     {project.tech.map((item) => (
                         <span key={item}>
                             {item}
@@ -20,10 +27,10 @@ function ProjectDetail({ project }) {
 
                     if (block.type === "text") {
                         return (
-                            <section className="mb-5" key={index}>
-                                <h2 className="mb-3">
+                            <section key={index}>
+                                <h3>
                                     {block.heading}
-                                </h2>
+                                </h3>
 
                                 <p>
                                     {block.body}
@@ -35,7 +42,7 @@ function ProjectDetail({ project }) {
                     if (block.type === "image") {
                         return (
                             <figure
-                                className="project-figure my-5"
+                                className="project-figure"
                                 key={index}
                             >
 
@@ -44,7 +51,7 @@ function ProjectDetail({ project }) {
                                     alt={block.alt}
                                     className="project-image"
                                 />
-                                <figcaption className="text-secondary mt-2">
+                                <figcaption className="text-secondary">
                                     {block.caption}
                                 </figcaption>
 
