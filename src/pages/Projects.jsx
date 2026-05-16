@@ -27,7 +27,7 @@ function Projects() {
                     <ProjectCard
                         title="Geometry Wars"
 
-                        description={'A small browser-based arcade game, my first step in game development'}
+                        description={'A small browser-based arcade game, my first step in game development.'}
 
                         date="Sept 2024"
 
