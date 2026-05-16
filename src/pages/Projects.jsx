@@ -1,4 +1,5 @@
 import ProjectCard from '../components/ProjectCard'
+import { projects } from "../data/projects";
 
 function Projects() {
     return (
@@ -10,6 +11,8 @@ function Projects() {
                 <div className="col-12 col-md-6 col-lg-4">
                     <ProjectCard
                         title="Portfolio Website"
+
+                        date="May 2026"
 
                         description={`A personal portfolio built to learn React, document my work, 
                             and create a home for future projects. (You're on it right now!)`}
@@ -26,9 +29,39 @@ function Projects() {
 
                         description={'A small browser-based arcade game, my first step in game development'}
 
+                        date="Sept 2024"
+
                         tech={["Javascript", "HTML", "CSS"]}
                         
                         link="/projects/geowar"
+                    />
+                </div>
+
+                <div className="col-12 col-md-6 col-lg-4">
+                    <ProjectCard
+                        title="Student Discussion Application"
+
+                        description={'A full-stack student discussion app featuring different user roles, admin panel, and replies.'}
+
+                        date="April 2025"
+
+                        tech={["Java", "JavaFX", "SQLite"]}
+                        
+                        link="/projects/discussionapp"
+                    />
+                </div>
+
+                <div className="col-12 col-md-6 col-lg-4">
+                    <ProjectCard
+                        title="USB Bus Simulation"
+
+                        description={'Linux kernel module that simulated block-level USB storage I/O operations using the Linux BIO and ioctl interfaces.'}
+
+                        date="June 2025"
+
+                        tech={["C", "Linux",]}
+                        
+                        link="/projects/usbsim"
                     />
                 </div>
             </div>

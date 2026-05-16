@@ -3,7 +3,7 @@ import "./ProjectDetail.css"
 
 function ProjectDetail({ project }) {
     return (
-        <main className="container page-section project-detail">
+        <main className="container project-detail">
 
             <Link to="/projects" className="back-link">
                 Back to Projects
@@ -14,13 +14,21 @@ function ProjectDetail({ project }) {
                 <h1> {project.title}</h1>
 
                 <p className="project-summary text-secondary fw-bold"> {project.summary}</p>
-
-                <div className="tech-list">
+                
+                <div className="project-meta">
                     {project.tech.map((item) => (
                         <span key={item}>
                             {item}
                         </span>
                     ))}
+
+                    {project.github && (
+                        <a href={project.github} target="_blank" rel="norefferer">GitHub</a>
+                    )}
+
+                    {project.live && (
+                        <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
+                    )}
                 </div>
 
                 {project.blocks.map((block, index) => {

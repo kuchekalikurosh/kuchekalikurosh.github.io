@@ -7,7 +7,7 @@ function ProjectPage() {
     const { slug } = useParams()
 
     const project = projects.find(
-        (p) => p.slug == slug
+        (p) => p.slug === slug
     )
 
     if (!project) {
