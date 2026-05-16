@@ -67,6 +67,16 @@ function ProjectDetail({ project }) {
                         )
                     }
 
+                    if (block.type === "iframe") {
+                        return (
+                            <iframe
+                                src={block.src}
+                                title={block.caption}
+                                className="project-demo"
+                            />
+                        )
+                    }
+
                     return null
                 })}
 

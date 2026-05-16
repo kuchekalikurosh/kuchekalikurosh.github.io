@@ -52,7 +52,6 @@
 }
 
 .back-link {
-    padding-left: 0.55rem;
     padding-bottom: 2rem;
 }
 
@@ -104,4 +103,13 @@
 .project-meta a:hover {
   opacity: 0.8;
   transform: translateY(-1px);
+}
+
+.project-demo {
+    width: 752px;
+    height: 794px;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    background: black;
+    overflow: hidden;
 }

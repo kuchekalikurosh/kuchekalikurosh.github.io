@@ -1,9 +1,10 @@
 import ProjectCard from '../components/ProjectCard'
 import { projects } from "../data/projects";
+import "./Projects.css";
 
 function Projects() {
     return (
-        <main className="container page-section">
+        <main className="container projects-page">
             <h1 className="mb-4">Projects</h1>
             <p className="mb-5 text-secondary">Collection of projects I've built, experimented with, or contributed to</p>
 
@@ -27,11 +28,11 @@ function Projects() {
                     <ProjectCard
                         title="Geometry Wars"
 
-                        description={'A small browser-based arcade game, my first step in game development'}
+                        description={'A small browser-based arcade game, my first step in game development.'}
 
                         date="Sept 2024"
 
-                        tech={["Javascript", "HTML", "CSS"]}
+                        tech={["JavaScript", "HTML", "CSS"]}
                         
                         link="/projects/geowar"
                     />

@@ -64,6 +64,63 @@ export const projects = [
     },
 
     {
+        slug: "geowar",
+        title: "Geometry Wars",
+        date: "Sept 2024",
+        summary: "A small browser-based arcade game, my first step in game development.",
+        tech: ["Javascript", "HTML", "CSS"],
+        github: "https://github.com/kuchekalikurosh/geo-wars",
 
-    }
+        blocks: [
+
+            {
+                type: "text",
+                heading: "Geometry Wars: The First Step",
+                body: `Geometry Wars was my first real step into game development and interactive software. I've always
+                been interested in games, having been playing video games ever since the release of the Nintedo DS Lite.
+                Most of my exprience has been in systems programming, applications, and backend-oriented software, so this
+                project was a way for me to explore a more creative side of programming.`
+            },
+
+            {
+                type: "image",
+                src: "/screenshots/ss_gw_1.png",
+                alt: "Early Build: Title",
+                caption: "Early Build: Title Screen"
+            },
+
+            {
+                type: "image",
+                src: "/screenshots/ss_gw_4.png",
+                alt: "Early Build: Gameplay",
+                caption: "Early Build: Gameplay"
+            },
+
+            {
+                type: "text",
+                heading: "Game Development Journey",
+                body: `The game was built using p5.js and vanilla JavaScript. Although the project was relatively small in 
+                scope, it taught me a great deal about game development concepts such as object interactions, 
+                input systems, collision logic, and enemy pathfinding behavior. 
+                There is still plenty of room for improvement, but for a first attempt at building a game, 
+                I was happy with how much I learned and how many ideas I was able to bring to life. 
+                This project ultimately became my first real step into game development.
+                A live demo can be played below.`
+            },
+
+
+            {
+                type: "text",
+                body: `Controls: WASD to move and J to shoot/select. Make sure to click on the embed!`
+            },
+
+
+            {
+                type: "iframe",
+                src: "https://editor.p5js.org/kuchekalikurosh/full/CeEouZiut",
+                caption: "Playable demo hosted through p5.js Web Editor"
+            },
+
+        ]
+    },
 ]
